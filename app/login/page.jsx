@@ -1,33 +1,38 @@
 // app/login/page.jsx
-'use client'
-import { useState } from 'react'
-import { createClient } from '@supabase/supabase-js'
+"use client";
+import { useState } from "react";
+import { useRouter } from "next/navigation"; // Use next/navigation in app directory
+import { createClient } from "@supabase/supabase-js";
 
 const supabase = createClient(
   process.env.NEXT_PUBLIC_SUPABASE_URL,
   process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
-)
+);
 
 export default function Login() {
-  const [email, setEmail] = useState('')
-  const [password, setPassword] = useState('')
-  const [error, setError] = useState(null)
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState(null);
+  const router = useRouter(); // Initialize the router
 
   const handleLogin = async (e) => {
-    e.preventDefault()
+    e.preventDefault();
     try {
       const { data, error } = await supabase.auth.signInWithPassword({
         email,
         password,
-      })
-      
-      if (error) throw error
-      console.log('Logged in:', data)
-      
+      });
+
+      if (error) throw error;
+
+      console.log("Logged in:", data);
+
+      // Redirect to "Welcome" page
+      router.push("/welcome");
     } catch (error) {
-      setError(error.message)
+      setError(error.message);
     }
-  }
+  };
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-50">
@@ -72,7 +77,20 @@ export default function Login() {
             </button>
           </div>
         </form>
+
+        {/* Link to Sign Up */}
+        <div className="text-center">
+          <p className="text-sm text-gray-600">
+            Don't have an account?{" "}
+            <button
+              onClick={() => router.push("/signup")}
+              className="text-blue-500 hover:text-blue-700 font-medium"
+            >
+              Sign Up
+            </button>
+          </p>
+        </div>
       </div>
     </div>
-  )
+  );
 }
