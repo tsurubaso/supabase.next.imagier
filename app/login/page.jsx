@@ -2,7 +2,6 @@
 "use client";
 import { useState } from "react";
 import { useRouter } from "next/navigation"; // Use next/navigation in app directory
-import { createClient } from "@supabase/supabase-js";
 import supabase from '../../supabaseClient';
 
 export default function Login() {

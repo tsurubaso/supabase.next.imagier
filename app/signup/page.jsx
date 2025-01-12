@@ -1,7 +1,6 @@
 // app/signup/page.jsx
 "use client";
 import { useState } from "react";
-import { createClient } from "@supabase/supabase-js";
 import { useRouter } from "next/navigation"; // Use next/navigation in app directory
 import supabase from '../../supabaseClient';
 
