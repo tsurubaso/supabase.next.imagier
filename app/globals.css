@@ -19,3 +19,22 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.delete-btn {
+  background-color: red;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.delete-btn:disabled {
+  background-color: grey;
+  cursor: not-allowed;
+}
+
+.delete-btn:hover:not(:disabled) {
+  background-color: darkred;
+}

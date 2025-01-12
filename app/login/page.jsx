@@ -3,11 +3,7 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation"; // Use next/navigation in app directory
 import { createClient } from "@supabase/supabase-js";
-
-const supabase = createClient(
-  process.env.NEXT_PUBLIC_SUPABASE_URL,
-  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
-);
+import supabase from '../../supabaseClient';
 
 export default function Login() {
   const [email, setEmail] = useState("");
