@@ -18,10 +18,9 @@ export default function Welcome() {
 
       if (!session) {
         // If no session, redirect to login
-        router.push("/login");
+          router.push("/login");
       }
     };
-
     checkSession();
   }, [router]);
 
