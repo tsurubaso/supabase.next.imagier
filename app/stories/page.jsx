@@ -1,4 +1,6 @@
 "use client";
+import NavBar from '../../components/NavBar';
+
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import supabase from "../../supabaseClient";
@@ -38,7 +40,8 @@ const StoriesList = () => {
 
   return (
     <div>
-      <div className="min-h-screen bg-gray-50 p-8">
+      <div className="min-h-screen bg-gray-50 p-4">
+      <NavBar />
         <h1 className="text-3xl font-extrabold text-gray-900 text-center mb-8">
           Stories List
         </h1>

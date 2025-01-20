@@ -1,5 +1,7 @@
 // app/welcome/page.jsx
+
 "use client";
+import NavBar from '../../components/NavBar';
 
 import { useEffect } from "react";
 import { useRouter } from "next/navigation";
@@ -34,7 +36,8 @@ export default function Welcome() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 p-8">
+    <div className="min-h-screen bg-gray-50 p-4">
+       <NavBar />
       <div className="bg-white p-8 rounded-lg shadow-md">
         <h1 className="text-3xl font-extrabold text-gray-900">
           Welcome to the Imagier!

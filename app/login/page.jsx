@@ -1,6 +1,6 @@
 // app/login/page.jsx
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation"; // Use next/navigation in app directory
 import supabase from '../../supabaseClient';
 
@@ -9,6 +9,20 @@ export default function Login() {
   const [password, setPassword] = useState("");
   const [error, setError] = useState(null);
   const router = useRouter(); // Initialize the router
+
+  // Check if a session already exists
+  useEffect(() => {
+    const checkSession = async () => {
+      const { data: { session } } = await supabase.auth.getSession();
+
+      if (session) {
+        // If a session exists, redirect to the welcome page
+        router.push("/welcome");
+      }
+    };
+
+    checkSession();
+  }, [router]); // Dependency array ensures this runs only on component mount
 
   const handleLogin = async (e) => {
     e.preventDefault();
