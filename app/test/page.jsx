@@ -10,7 +10,7 @@ import ClientSideMarkdown from '../../components/ClientSideMarkdown'; // Import 
 
 
 const TemplatePage = async () => {
-  const filePath = path.join(process.cwd(), "public/books/template.md");
+  const filePath = path.join(process.cwd(), "public/books/BaseA.md");
   const fileContent = fs.readFileSync(filePath, "utf8");
 
 
@@ -22,7 +22,7 @@ const TemplatePage = async () => {
      <ClientSideMarkdown content={fileContent} />;
       
        
-      {/* <ReactMarkdown>{fileContent}</ReactMarkdown> */}
+    
       
       
  
