@@ -81,6 +81,7 @@ body {
 /* Paragraph styles */
 .markdown-content p {
   margin-bottom: 15px;
+  font-size: 20px;
 }
 
 /* Optional: Styling for blockquotes */

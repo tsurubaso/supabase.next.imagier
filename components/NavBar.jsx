@@ -22,7 +22,14 @@ const NavBar = () => {
             Home
           </button>
           <button
-            onClick={() => router.push('/stories')}
+            onClick={() => router.push('/contact')}
+            className="hover:text-gray-300"
+          >
+            Contact
+          </button>
+
+          <button
+            onClick={() => router.push('/book')}
             className="hover:text-gray-300"
           >
             Stories

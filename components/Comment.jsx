@@ -87,12 +87,12 @@ export default function Comment() {
 
   return (
     <div className="mt-8 p-6 bg-gray-100 rounded-lg shadow-md">
-      <h3 className="text-xl font-semibold">Leave a Comment</h3>
+      <h3 className="text-xl font-semibold">Leave a Message</h3>
       <form onSubmit={handleSubmit} className="mt-4 space-y-4">
         <textarea
           value={comment}
           onChange={(e) => setComment(e.target.value)}
-          placeholder="Write your comment here..."
+          placeholder="Write your message here..."
           className="w-full p-3 rounded-md border border-gray-300"
         ></textarea>
 
@@ -120,7 +120,7 @@ export default function Comment() {
       </form>
 
       <div className="mt-6">
-        <h4 className="text-lg font-bold">All Comments:</h4>
+        <h4 className="text-lg font-bold">All Messages:</h4>
         {loading ? (
           <p>Loading comments...</p>
         ) : (
