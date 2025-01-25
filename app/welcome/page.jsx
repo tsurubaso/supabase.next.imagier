@@ -44,15 +44,18 @@ export default function Welcome() {
         <p className="text-lg text-gray-700 mt-4">
           You always have been reading wonderful stories... But what good is a
           story without an illustration? Think about Jules Verne without Gustave
-          Doré? No Jules without Gustave.
+          Doré?
           <br />  
+          No Jules without Gustave!
+          <br />
           Here, content creators can create illustrations for already existing
           stories and share their work. The goal is to promote and remunerate
           illustrators.
           <br />
           You get the point. Now, I invite to read the stories, see where to put
-          your illustration, and share with us your illustration link. we do the
-          reste.
+          your illustration, and share with us your illustration links. 
+          <br />
+          we do the rest.
         </p>
       </div>
     </div>
