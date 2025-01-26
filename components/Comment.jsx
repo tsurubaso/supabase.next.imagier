@@ -14,7 +14,9 @@ export default function Comment() {
   useEffect(() => {
     // Fetch the session when the component mounts
     const fetchSession = async () => {
-      const { data: { session } } = await supabase.auth.getSession();
+      const {
+        data: { session },
+      } = await supabase.auth.getSession();
       setSession(session);
     };
 
@@ -127,7 +129,11 @@ export default function Comment() {
           <ul className="mt-4 space-y-2">
             {comments.map((c) => (
               <li key={c.id} className="p-3 bg-white rounded-md shadow-sm">
-                <p className="font-medium text-gray-700">{c.user || "Anonymous"}</p>
+                <p className="font-medium text-gray-700">
+                  {c.user?.includes("@")
+                    ? c.user.split("@")[0]
+                    : c.user || "Anonymous"}
+                </p>
                 <p className="text-gray-500 text-sm">
                   {new Date(c.created_at).toLocaleString()}
                 </p>
