@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import ReactMarkdown from "react-markdown";
+import rehypeRaw from "rehype-raw"; // Allows raw HTML processing
 import NavBar from "../../../components/NavBar";
 
 const BookPage = ({ params }) => {
@@ -60,7 +61,7 @@ const BookPage = ({ params }) => {
       <NavBar />
       <div className="p-8">
         <div className="markdown-content">
-          <ReactMarkdown>{fileContent}</ReactMarkdown>
+          <ReactMarkdown rehypePlugins={[rehypeRaw]}>{fileContent}</ReactMarkdown>
         </div>
       </div>
     </div>

@@ -1,5 +1,10 @@
+
+<iframe src="https://assets.pinterest.com/ext/embed.html?id=633387442857850" height="700" width="345" frameborder="2" scrolling="no" ></iframe>
+
+
 # Base D extraits
 ## Auteur : Tsurubaso
+
 
 La ville avait grandi. Elle avait étendu son réseau souterrain de veinules. Les tunneliers et les foreuses s’étaient détournés de ce site. L'agitation et l’intérêt, la tension et la curiosité qu’avait dû attirer cet espace avait été étouffé par les circonstances.
 Une crise politique grave sur terre avait provoqué une accélération de la colonisation, une augmentation des programmes spatiaux de déplacement. La terre connaissait une nouvelle période d’euphorie, la natalité avait depuis 50 ans explosé. Les plus aventureux regardaient vers le ciel. La population du satellite avait augmenté elle aussi.
@@ -9,5 +14,8 @@ C’était vivant, animé, on n’y voyait des familles. Beaucoup de groupes d'�
 Les villes universitaires voisines venaient déverser leur trop plein d’étudiants. Affamés d’exotisme et de différence. Il savaient que là, les yeux et les oreilles auraient de quoi se rassasier.
 La salle n’avait pas changé, on avait jeté une nappe sur l’autel et les carafes et sauces exotiques attendaient que les clients veuillent bien les prendre, l’autre main encombrée d’un plat de nouilles ou d’un bol de viande. La nourriture changeait de l’ordinaire. 
 Mais il y avait aussi la tradition du chant. J’avais parlé auparavant du travail fait pour conserver à chacun une identité propre basée sur les connaissances, les coutumes et les traditions. Parfois certaines traditions étaient adoptées par tous, « le Chant » était devenu une valeur commune.
+
+<iframe src="https://assets.pinterest.com/ext/embed.html?id=8655424280678297" height="735" width="345" frameborder="0" scrolling="no" ></iframe>
+
 Les conflits, les querelles et les petites mésaventures se réglaient par un duel, un duel chanté.
 Tous étaient témoins et spectateurs, mais aussi parties prenantes. Chacun essayait de créer une litanie reprise et rythmée par les autres. C’était souvent filles contre garçons mais le vainqueur était celui qui arrivait à faire chanter la majorité avec lui. Les tables chantaient fort, la voûte et l’espace hermétique raisonnait comme une cathédrale et cela faisait une part de son succès auprès des jeunes. On venait pour la cuisine, son prix modique mais surtout pour les chants.

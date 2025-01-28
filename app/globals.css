@@ -82,6 +82,7 @@ body {
 .markdown-content p {
   margin-bottom: 15px;
   font-size: 20px;
+  color: #333;
 }
 
 /* Optional: Styling for blockquotes */
@@ -97,4 +98,9 @@ body {
 .markdown-content ol {
   margin: 15px 0;
   padding-left: 40px;
+}
+
+.markdown-content iframe {
+  display: block;
+  margin: 1.5em 0;
 }
