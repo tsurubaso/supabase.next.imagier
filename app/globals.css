@@ -104,3 +104,11 @@ body {
   display: block;
   margin: 1.5em 0;
 }
+
+@media print {
+  iframe {
+    display: none !important; /* Hide all iframes during printing */
+  }
+}
+
+
