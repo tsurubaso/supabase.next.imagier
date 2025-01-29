@@ -15,6 +15,5 @@ Les villes universitaires voisines venaient déverser leur trop plein d’étudi
 La salle n’avait pas changé, on avait jeté une nappe sur l’autel et les carafes et sauces exotiques attendaient que les clients veuillent bien les prendre, l’autre main encombrée d’un plat de nouilles ou d’un bol de viande. La nourriture changeait de l’ordinaire. 
 Mais il y avait aussi la tradition du chant. J’avais parlé auparavant du travail fait pour conserver à chacun une identité propre basée sur les connaissances, les coutumes et les traditions. Parfois certaines traditions étaient adoptées par tous, « le Chant » était devenu une valeur commune.
 
-
 Les conflits, les querelles et les petites mésaventures se réglaient par un duel, un duel chanté.
 Tous étaient témoins et spectateurs, mais aussi parties prenantes. Chacun essayait de créer une litanie reprise et rythmée par les autres. C’était souvent filles contre garçons mais le vainqueur était celui qui arrivait à faire chanter la majorité avec lui. Les tables chantaient fort, la voûte et l’espace hermétique raisonnait comme une cathédrale et cela faisait une part de son succès auprès des jeunes. On venait pour la cuisine, son prix modique mais surtout pour les chants.
