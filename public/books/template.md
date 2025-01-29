@@ -47,6 +47,8 @@ Here's another placeholder:
 2. 番号付きリスト2
 3. 番号付きリスト3
 
+<iframe src="https://assets.pinterest.com/ext/embed.html?id=633387442857850" height="700" width="345" frameborder="2" scrolling="no" ></iframe>
+
 **太字**
 *斜体*
 ~~取り消し線~~
