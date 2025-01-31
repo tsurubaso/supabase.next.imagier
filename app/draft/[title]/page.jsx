@@ -18,7 +18,7 @@ const BookPage = ({ params }) => {
       if (!title) return; // Skip if there's no title
 
       try {
-        const res = await fetch(`/draft/${title}.md`);
+        const res = await fetch(`/book/${title}.md`);
         if (!res.ok) {
           throw new Error(`Failed to fetch the book: ${title}`);
         }
@@ -57,7 +57,7 @@ const BookPage = ({ params }) => {
   }
 
   return (
-    <div>
+    <div className="min-h-screen bg-gray-50 p-4">
       <NavBar />
       <div className="p-8">
         <div className="markdown-content">

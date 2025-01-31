@@ -57,7 +57,7 @@ const BookPage = ({ params }) => {
   }
 
   return (
-    <div>
+    <div className="min-h-screen bg-gray-50 p-4">
       <NavBar />
       <div className="p-8">
         <div className="markdown-content">

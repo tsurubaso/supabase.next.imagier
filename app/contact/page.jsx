@@ -3,9 +3,9 @@ import Comment from "../../components/Comment"; // Reuse the Comment component
 
 const ContactPage = () => {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gray-50 p-4">
       <NavBar />
-      <div className="max-w-3xl mx-auto p-6">
+      <div className="bg-white p-8 rounded-lg shadow-md">
         <h1 className="text-3xl font-extrabold text-gray-900 text-center mb-6">
           Contact Us
         </h1>
