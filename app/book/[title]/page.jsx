@@ -16,14 +16,18 @@ const BookPage = ({ params }) => {
   useEffect(() => {
     const fetchFileContent = async () => {
       if (!title) return; // Skip if there's no title
-
+    
       try {
-          const res = await fetch(`/books/${title}.md`);
+        const res = await fetch(`/books/${title}.md`);
         if (!res.ok) {
           throw new Error(`Failed to fetch the book: ${title}`);
         }
-
-        const content = await res.text();
+    
+        let content = await res.text();
+    
+        // Remove front matter (--- key: value ---)
+        content = content.replace(/^---[\s\S]+?---\s*/, ""); 
+    
         setFileContent(content);
         setLoading(false);
       } catch (err) {
@@ -31,6 +35,7 @@ const BookPage = ({ params }) => {
         setLoading(false);
       }
     };
+    
 
     fetchFileContent();
   }, [title]); // Fetch content only when the title is available
