@@ -18,7 +18,7 @@ const BookPage = ({ params }) => {
       if (!title) return; // Skip if there's no title
 
       try {
-        const res = await fetch(`/af6daca/${title}.md`);
+        const res = await fetch(`/books/${title}.md`);
         if (!res.ok) {
           throw new Error(`Failed to fetch the book: ${title}`);
         }
