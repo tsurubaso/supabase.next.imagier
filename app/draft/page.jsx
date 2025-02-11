@@ -25,13 +25,13 @@ const StoriesList = () => {
       }
 
       const { data, error } = await supabase
-        .from("drafts") // Ensure you have a 'stories' table
+        .from("stories") // Ensure you have a 'stories' table
         .select("*");
 
       if (error) {
         console.error(error);
       } else {
-        setStories(data);
+        setStories(data.filter(story => story.status === "draft")); // Filtre en front-end
       }
     };
 

@@ -31,7 +31,7 @@ const StoriesList = () => {
       if (error) {
         console.error(error);
       } else {
-        setStories(data);
+        setStories(data.filter(story => story.status === "story")); // Filtre en front-end
       }
     };
 
