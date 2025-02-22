@@ -38,7 +38,7 @@ export default function Welcome() {
       <NavBar />
 
       <div className="bg-white p-8 rounded-lg shadow-md">
-        <h1 className="text-3xl font-extrabold text-gray-900">
+      <h1 className="text-3xl font-extrabold text-gray-900">
           Welcome to the Imagier!
         </h1>
         <p className="text-lg text-gray-700 mt-4">
