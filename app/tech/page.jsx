@@ -7,12 +7,10 @@ import supabase from "../../supabaseClient";
 
 import { useRouter } from "next/navigation";
 
-
-
 const StoriesList = () => {
   const [stories, setStories] = useState([]);
   const router = useRouter();
-  
+  0;
 
   useEffect(() => {
     const fetchStories = async () => {
@@ -26,9 +24,15 @@ const StoriesList = () => {
         return; // Prevent fetching stories if not logged in
       }
 
-      const data = await window.electron.getBooks(); // Récupère toutes les entrées
-      setStories(data.filter(story => story.status === "tech")); // Filtre en front-end
+      const { data, error } = await supabase
+        .from("stories") // Ensure you have a 'stories' table
+        .select("*");
 
+      if (error) {
+        console.error(error);
+      } else {
+        setStories(data.filter(story => story.status === "tech")); // Filtre en front-end
+      }
     };
 
     fetchStories();
@@ -37,20 +41,19 @@ const StoriesList = () => {
   return (
     <div>
       <div className="min-h-screen bg-gray-50 p-4">
-        <NavBar />
+      <NavBar />
         <h1 className="text-3xl font-extrabold text-gray-900 text-center mb-8">
           Technologies List
         </h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
           {stories.map((story) => (
-            <Link key={story.id} href={`/draft/${story.link}`} passHref>
+            <Link key={story.id} href={`/tech/${story.link}`} passHref>
               <div className="bg-white p-4 rounded-lg shadow-md hover:bg-gray-200 transition duration-300 ease-in-out cursor-pointer">
                 <h3 className="text-xl font-semibold text-gray-900">
                   {story.title}
                 </h3>
                 <p className="text-gray-700 mt-2">{story.description}</p>
                 <p className="text-sm text-gray-500 mt-2">{story.type}</p>
-                <p className="text-sm text-gray-500 mt-2">Nombre de lectures: {story.lecture}</p>
               </div>
             </Link>
           ))}
