@@ -48,12 +48,7 @@ export default function Welcome() {
           <br />
           But what good is a story without an illustration? <br />
           Think about Jules Verne without Gustave Doré.<br />
-          Ok...here it is Bayard, agreed!
-          <iframe
-            src="https://assets.pinterest.com/ext/embed.html?id=814588651359847683"
-            height="1089"
-            width="600"
-          ></iframe>
+         
           Yes, you see, in your mind, and for generations, those stories had
           always been illustrated. <br />
           The art of the Editor has always been to combine text and image.{" "}
