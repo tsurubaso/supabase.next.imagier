@@ -47,7 +47,7 @@ export default function Welcome() {
           Great Authors, Great Adventures.
           <br />
           But what good is a story without an illustration? <br />
-          Think about Jules Verne without Gustave Doré.<br />
+          Think about Jules Verne without Édouard Riou, Alphonse de Neuville, Léon Benett, and Jules Férat.<br />
           Ok...here it is Bayard, agreed!
           <iframe
             src="https://assets.pinterest.com/ext/embed.html?id=814588651359847683"
@@ -56,10 +56,9 @@ export default function Welcome() {
           ></iframe>
           Yes, you see, in your mind, and for generations, those stories had
           always been illustrated. <br />
-          The art of the Editor has always been to combine text and image.{" "}
-          <br />
-          <br />
-          No Jules without Gustave!
+          The art of the Editor has always been to combine text and image.<br />
+          For Jules it was Pierre-Jules Hetzel.
+          
           <br />
           Here, content creators can create illustrated stories, and share their
           work.
