@@ -1,10 +1,5 @@
-// app/welcome/page.jsx
-
 "use client";
 import NavBar from "../../components/NavBar";
-//import VisTimeline from "../../components/VisTimeline"; // Adjust the import path as necessary
-//<VisTimeline />
-
 import { useEffect } from "react";
 import { useRouter } from "next/navigation";
 import supabase from "../../supabaseClient";
@@ -19,7 +14,6 @@ export default function Welcome() {
       } = await supabase.auth.getSession();
 
       if (!session) {
-        // If no session, redirect to login
         router.push("/login");
       }
     };
@@ -38,61 +32,88 @@ export default function Welcome() {
   return (
     <div className="min-h-screen bg-gray-50 p-4">
       <NavBar />
-      
 
-      <div className="bg-white p-8 rounded-lg shadow-md">
-      <h1 className="text-3xl font-extrabold text-gray-900">
+      <div className="bg-white p-8 rounded-lg shadow-md max-w-3xl mx-auto">
+        <h1 className="text-3xl font-extrabold text-gray-900 mb-4">
           Welcome to the Imagier!
         </h1>
-        <p className="text-lg text-gray-700 mt-4">
+        <p className="text-lg text-gray-700 mb-6">
           You always have been reading wonderful stories...
           <br />
           Great Authors, Great Adventures.
           <br />
-          But what good is a story without an illustration? <br />
-          Think about Jules Verne without Édouard Riou, Alphonse de Neuville, Léon Benett, and Jules Férat.<br />
-          Ok...here it is Bayard, agreed!
-          <iframe
-            src="https://assets.pinterest.com/ext/embed.html?id=814588651359847683"
-            height="1089"
-            width="600"
-          ></iframe>
+          But what good is a story without an illustration?
+        </p>
+        <p className="text-lg text-gray-700 mb-6">
+          Think about <strong>Jules Verne</strong> without{" "}
+          <em>Édouard Riou, Alphonse de Neuville, Léon Benett</em>, and{" "}
+          <em>Jules Férat</em>.<br />
+          Or <em>Bayard</em>!
+        </p>
+        <p className="text-lg text-gray-700 mb-6">
           Yes, you see, in your mind, and for generations, those stories had
-          always been illustrated. <br />
-          The art of the Editor has always been to combine text and image.<br />
-          For Jules it was Pierre-Jules Hetzel.
-          
+          always been illustrated.
           <br />
-          Here, content creators can create illustrated stories, and share their
+          The art of the Editor has always been to combine text and image.
+          <br />
+          For Jules it was <strong>Pierre-Jules Hetzel</strong>.
+        </p>
+
+        <hr className="my-8" />
+
+        <h2 className="text-2xl font-bold text-gray-800 mb-4">
+          ✏️ What is this project?
+        </h2>
+        <p className="text-lg text-gray-700 mb-6">
+          Here, content creators can create illustrated stories and share their
           work.
           <br />
-          The goal is to promote and in the future remunerate creator,
+          The goal is to <strong>promote and, in the future, remunerate creators</strong>:
+        </p>
+        <ul className="list-disc list-inside text-lg text-gray-700 mb-6">
+          <li>Illustrators</li>
+          <li>Graphic designers</li>
+          <li>Painters</li>
+          <li>Photographers</li>
+          <li>3D artists</li>
+        </ul>
+        <p className="text-lg text-gray-700 mb-6">... it's open bar!</p>
+
+        <hr className="my-8" />
+
+        <h2 className="text-2xl font-bold text-gray-800 mb-4">🔧 What's next?</h2>
+        <ul className="list-disc list-inside text-lg text-gray-700 mb-6">
+          <li>
+            I will share with creators another app to simplify the process.
+          </li>
+          <li>You will have more control and autonomy.</li>
+          <li>Later, I will open this space to writers — but not yet.</li>
+          <li>For now, just share your link — we will not host it.</li>
+        </ul>
+
+        <hr className="my-8" />
+
+        <h2 className="text-2xl font-bold text-gray-800 mb-4">
+          📚 How to contribute
+        </h2>
+        <p className="text-lg text-gray-700 mb-6">
+          I invite you to <strong>read the stories</strong>, see where
+          illustrations can fit, and we will take care of the rest.
+        </p>
+        <p className="text-lg text-gray-700 mb-6">
+          This software is hosted on GitHub — feel free to{" "}
+          <strong>clone it</strong>.
           <br />
-          illustrators, graphic designers, painters, photographers, 3d
-          artists... it's open bar!
+          I will add rules later on, but the first one is:
+        </p>
+        <blockquote className="border-l-4 border-gray-300 pl-4 italic text-gray-600 mb-6">
+          🧾 <strong>Respect the work of others.</strong>
+        </blockquote>
+        <p className="text-lg text-gray-700">
+          This implies that, in the future, I will better organize the{" "}
+          <code>/public</code> folder.
           <br />
-          <br />
-          In the future, I will share with creators an other app made with
-          Electron that will simplify the process.
-          <br />
-          You will have more control and autonomy.
-          <br />
-          Later on, I will also open this space to writers, but not yet.
-          <br />
-          For now, just share your link, we will not host it.
-          <br />
-          <br />
-          I invite you to read the stories, see where illustrations can fit, and
-          we will take care of the rest.
-          <br />
-          <br />
-          Also, this is a software hosted on github, then you can clone it.
-          <br />
-          I will add rules later on but the first one is to respect the work of
-          others.
-          <br />
-          This imply that in the future I will need to better organize the
-          public folder.
+          For now you have only one big group of related stories and novels.
         </p>
       </div>
     </div>
