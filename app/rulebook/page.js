@@ -33,18 +33,11 @@ const RulePage = () => {
         <NavBar />
         <div
           className="min-h-screen p-4"
-          style={{
-            backgroundColor: "var(--background)",
-            color: "var(--foreground)",
-          }}
+  
         >
           <div
             className="p-8 rounded-lg shadow-md max-w-3xl mx-auto"
-            style={{
-              backgroundColor: "var(--background)",
-              color: "var(--foreground)",
-              border: "1px solid #444",
-            }}
+       
           >
             <h1 className="text-3xl font-extrabold mb-4">
               📖 Rulebook — Naming & Organization
