@@ -38,7 +38,9 @@ const RulePage = () => {
                 📖 Rulebook — Naming & Organization
               </h1>
 
-              <h2 className="text-2xl font-bold text-gray-900 mb-4">📝 Naming Rules</h2>
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">
+                📝 Naming Rules
+              </h2>
               <ol className="list-decimal list-inside text-lg mb-6 text-gray-900 space-y-2">
                 <li>
                   <strong>Series name first</strong> — The series title appears

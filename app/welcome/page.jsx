@@ -45,18 +45,83 @@ export default function Welcome() {
           But what good is a story without an illustration?
         </p>
         <p className="text-lg text-gray-700 mb-6">
-          Think about <strong>Jules Verne</strong> without{" "}
-          <em>Édouard Riou, Alphonse de Neuville, Léon Benett</em>, and{" "}
-          <em>Jules Férat</em>.<br />
-          Or <em>Bayard</em>!
+          Think about{" "}
+          <strong>
+            <a
+              href="https://en.wikipedia.org/wiki/Jules_Verne"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Jules Verne
+            </a>
+          </strong>{" "}
+          without{" "}
+          <em>
+            <a
+              href="https://fr.wikipedia.org/wiki/%C3%89douard_Riou"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Édouard Riou
+            </a>
+            ,
+            <a
+              href="https://fr.wikipedia.org/wiki/Alphonse_de_Neuville"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Alphonse de Neuville
+            </a>
+            ,
+            <a
+              href="https://fr.wikipedia.org/wiki/L%C3%A9on_Benett"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Léon Benett
+            </a>
+          </em>
+          , and{" "}
+          <em>
+            <a
+              href="https://fr.wikipedia.org/wiki/Jules_F%C3%A9rat"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Jules Férat
+            </a>
+          </em>
+          .<br />
+          Or{" "}
+          <em>
+            <a
+              href="https://en.wikipedia.org/wiki/%C3%89mile_Bayard"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Émile-Antoine Bayard
+            </a>
+          </em>
+          !
         </p>
+
         <p className="text-lg text-gray-700 mb-6">
           Yes, you see, in your mind, and for generations, those stories had
           always been illustrated.
           <br />
           The art of the Editor has always been to combine text and image.
           <br />
-          For Jules it was <strong>Pierre-Jules Hetzel</strong>.
+          For Jules it was{" "}
+          <strong>
+            <a
+              href="https://en.wikipedia.org/wiki/Pierre-Jules_Hetzel"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Pierre-Jules Hetzel
+            </a>
+          </strong>
+          .
         </p>
 
         <hr className="my-8" />
@@ -68,7 +133,8 @@ export default function Welcome() {
           Here, content creators can create illustrated stories and share their
           work.
           <br />
-          The goal is to <strong>promote and, in the future, remunerate creators</strong>:
+          The goal is to{" "}
+          <strong>promote and, in the future, remunerate creators</strong>:
         </p>
         <ul className="list-disc list-inside text-lg text-gray-700 mb-6">
           <li>Illustrators</li>
@@ -81,7 +147,9 @@ export default function Welcome() {
 
         <hr className="my-8" />
 
-        <h2 className="text-2xl font-bold text-gray-800 mb-4">🔧 What's next?</h2>
+        <h2 className="text-2xl font-bold text-gray-800 mb-4">
+          🔧 What's next?
+        </h2>
         <ul className="list-disc list-inside text-lg text-gray-700 mb-6">
           <li>
             I will share with creators another app to simplify the process.
@@ -103,8 +171,7 @@ export default function Welcome() {
         <p className="text-lg text-gray-700 mb-6">
           This software is hosted on GitHub — feel free to{" "}
           <strong>clone it</strong>.
-          <br />
-          I will add rules later on, but the first one is:
+          <br />I will add rules later on, but the first one is:
         </p>
         <blockquote className="border-l-4 border-gray-300 pl-4 italic text-gray-600 mb-6">
           🧾 <strong>Respect the work of others.</strong>
