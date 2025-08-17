@@ -34,6 +34,12 @@ const NavBar = () => {
           >
             Stories
           </button>
+          <button
+            onClick={() => router.push('/rulebook')}
+            className="hover:text-gray-300"
+          >
+            Rulebook
+          </button>
         </div>
 
         {/* Center Print Button */}
